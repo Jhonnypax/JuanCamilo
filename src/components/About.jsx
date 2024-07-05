@@ -1,7 +1,5 @@
 import React from 'react';
 import "../styles/About.css";
-import Brush3D from '../components/Brush3D';
-import Computer3D from '../components/Computer3D';
 
 const About = () => {
   return (
@@ -22,10 +20,6 @@ const About = () => {
           Right now, I'm finishing my studies as a full-stack developer and of course, I'm not going to stop there. 
           I need to improve, learn, and explore even more if I want to do better.
         </p>
-      </div>
-      <div className="models">
-        <Brush3D />
-        <Computer3D />
       </div>
     </div>
   );
