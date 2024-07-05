@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import "./App.css";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import CV from "./components/CV";
+import Experience from "./components/Experience";
 import Home from "./components/Home";
 /* import Footer from "./components/Footer"; */
 
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/CV" element={<CV />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes> 
         {/* <Footer /> */}
       </BrowserRouter>

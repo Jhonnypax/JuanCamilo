@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Playwrite+AU+VIC:wght@100..400&display=swap');
 
-body{
-background-color: beige;
+body {
+  background-image: url('../components/img/backhome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .contenidoHome{
@@ -11,7 +15,7 @@ background-color: beige;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: white;
   font-size: 20px;
   opacity: 0;
   transform: translateY(20px);
@@ -28,6 +32,7 @@ background-color: beige;
 .contenidoHome p {
   font-family: "Afacad", sans-serif;
   font-size: 25px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -39,18 +44,54 @@ background-color: beige;
   padding: 10px 30px;
   color: white;
   border: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.cv:hover::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
 }
 
 .cv:hover {
   background-color: black;
   color: white;
+  transform: scale(1.05);
+}
+
+.cv:active {
+  transform: scale(0.95);
+}
+
+.cv span {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: black; }
+  50% { border-color: white; }
 }
 
 .typing-animation {

@@ -47,9 +47,9 @@ const Home = () => {
       <div className="contenidoHome">
         <h1 className="typing-animation">{text}</h1>
         <p>
-          <i> - Software Designer / Engineer, UX designer, based in Bogotá, Colombia - </i>
+          <i> - Front end Developer, UX designer, based in Bogotá, Colombia -</i>
         </p>
-        <button className="cv">MY CV</button>
+        <a href="../../public/CV-Juan-Camilo-Páez.pdf" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
       </div>
   );
 };

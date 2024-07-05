@@ -17,14 +17,19 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: beige;
-  z-index: 1000; 
+  background-color: transparent; 
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .nombre {
   font-size: 20px;
   font-weight: bold;
-  color: black;
   text-decoration: none;
 }
 
@@ -41,11 +46,11 @@
   gap: 40px;
   padding-right: 50px;
 }
- 
+
 .navigation a {
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: white;
   font-size: 17px;
   position: relative;
   transition: all 0.3s ease;
@@ -57,14 +62,14 @@
   left: 0;
   bottom: -5px;
   height: 2px;
-  background-color: #333;
+  background-color: white;
   width: 0%;
   transition: width 0.3s ease;
 }
 
 .navigation a:hover,
 .navigation a:focus {
-  color: #333;
+  color:hotpink  ;
   outline: none;
 }
 
@@ -76,6 +81,6 @@
   width: 100%;
 }
 
-.navigation .active a {
-  text-decoration: underline;
+.navigation a:hover {
+  transform: scale(1.1);
 }

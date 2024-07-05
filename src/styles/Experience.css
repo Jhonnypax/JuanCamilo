@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap");
+
+.Exp {
+  color: white;
+  font-family: "Afacad", sans-serif;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Exp h2 {
+  font-size: 200px;
+  transition: opacity 1s ease-in-out;
+}
+
+.Exp h1 {
+  font-size: 50px;
+  transition: opacity 1s ease-in-out;
+}
+
+.Exp p {
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.Exp.show p {
+  opacity: 1;
+}

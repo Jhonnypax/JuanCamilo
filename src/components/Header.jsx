@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
 import Logo3D from "./logo3D";
 
 function Header() {
+  const [hideHeader, setHideHeader] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setHideHeader(true);
+      } else {
+        setHideHeader(false);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${hideHeader ? "hide" : ""}`}>
       <div className="Nombreylogo">
         <NavLink to="/" className="logo">
           <Logo3D />
@@ -32,8 +50,8 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active-link">
-              CV
+            <NavLink to="/Experience" activeClassName="active-link">
+              EXPERIENCE
             </NavLink>
           </li>
         </ul>

@@ -15,19 +15,19 @@ function Logo3D() {
 
         const geometry = new THREE.BoxGeometry(1, 1, 1);
         const materials = [
-            new THREE.MeshBasicMaterial({ color: 0x111111 }), 
-            new THREE.MeshBasicMaterial({ color: 0x111111 }), 
-            new THREE.MeshBasicMaterial({ color: 0x111111 }), 
-            new THREE.MeshBasicMaterial({ color: 0x111111 }), 
-            new THREE.MeshBasicMaterial({ color: 0x111111 }), 
-            new THREE.MeshBasicMaterial({ color: 0x111111 })  
+            new THREE.MeshBasicMaterial({ color: 0x333333 }), // Cara 1
+            new THREE.MeshBasicMaterial({ color: 0x444444 }), // Cara 2
+            new THREE.MeshBasicMaterial({ color: 0x555555 }), // Cara 3
+            new THREE.MeshBasicMaterial({ color: 0x666666 }), // Cara 4
+            new THREE.MeshBasicMaterial({ color: 0x777777 }), // Cara 5
+            new THREE.MeshBasicMaterial({ color: 0x888888 })  // Cara 6
         ];
         const cube = new THREE.Mesh(geometry, materials);
         scene.add(cube);
 
         const wireframe = new THREE.LineSegments(
             new THREE.EdgesGeometry(cube.geometry), 
-            new THREE.LineBasicMaterial({ color: 0xffffff, linewidth: 2 }) 
+            new THREE.LineBasicMaterial({ color: 0xbbbbbb, linewidth: 2 }) // Wireframe en un color menos resaltante
         );
         cube.add(wireframe);
 
