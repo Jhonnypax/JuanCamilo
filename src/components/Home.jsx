@@ -49,7 +49,7 @@ const Home = () => {
         <p>
           <i> - Front end Developer, UX designer, based in Bogotá, Colombia -</i>
         </p>
-        <a href="../components/cv.pdf" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
+        <a href="https://docs.google.com/document/d/1EQD9UueIV1AGTS-hVciIH5u6eiYtO8h11WJcWVuPpYQ/edit?usp=sharing" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
       </div>
   );
 };
