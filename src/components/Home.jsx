@@ -49,7 +49,7 @@ const Home = () => {
         <p>
           <i> - Front end Developer, UX designer, based in Bogotá, Colombia -</i>
         </p>
-        <a href="../../public/CV-Juan-Camilo-Páez.pdf" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
+        <a href="../components/cv.pdf" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
       </div>
   );
 };
