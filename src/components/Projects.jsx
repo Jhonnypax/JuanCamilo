@@ -22,7 +22,7 @@ const Projects = () => {
       <div className='project-section'>
         <h2>FRONT AND BACK END</h2>
         <div className="button-row">
-          <a href="https://github.com/Jhonnypax/Primerproyecto.git"><ProjectButton text="MY FIRST WEBPAGE" image={preview1} /></a>
+          <a href="https://1-proyecto-ashy.vercel.app"><ProjectButton text="MY FIRST WEBPAGE" image={preview1} /></a>
           <a href="https://sound-rentals.vercel.app"><ProjectButton text="SOUNDRENTALS" image={preview2} /></a>
           <a href="https://github.com/Jhonnypax/ClinicaOdontologica.git"><ProjectButton text="DENTAL CLINIC" image={preview3} /></a>
         </div>

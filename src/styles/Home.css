@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Playwrite+AU+VIC:wght@100..400&display=swap');
 
-body {
-  background-image: url('../components/img/backhome.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 .contenidoHome{
   font-family: "Afacad", sans-serif;
   display: flex;
@@ -20,6 +12,10 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
+  background-image: url("../components/img/backhome.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 @keyframes fadeInUp {
@@ -44,50 +40,14 @@ body {
   padding: 10px 30px;
   color: white;
   border: none;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.cv::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background-color: rgba(255, 255, 255, 0.15);
-  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
-  border-radius: 50%;
-  z-index: 0;
-  transform: translate(-50%, -50%);
-}
-
-.cv:hover::before {
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
 }
 
 .cv:hover {
-  background-color: black;
-  color: white;
-  transform: scale(1.05);
-}
-
-.cv:active {
-  transform: scale(0.95);
-}
-
-.cv span {
-  position: relative;
-  z-index: 1;
-}
+  background-color: white;
+  color: black;
+} 
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
@@ -102,4 +62,22 @@ body {
   margin: 0 auto;
   letter-spacing: .15em;
   animation: blink-caret .75s step-end infinite;
+}
+
+@media (max-width: 768px) {
+
+  .typing-animation{
+    font-size: 1.3em;
+  } 
+
+  .contenidoHome {
+    font-size: 16px;
+  }
+  .contenidoHome p {
+    font-size: 20px;
+  }
+  .cv {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }

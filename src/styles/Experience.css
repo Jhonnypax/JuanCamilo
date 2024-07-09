@@ -35,3 +35,20 @@
 .Exp.show p {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+  .Exp h2{
+    font-size: 5em;
+  }
+
+  .Exp h1{
+    font-size: 1.4em;
+  }
+
+  .Exp p{
+    font-size: 1.5em;
+  }
+
+
+}

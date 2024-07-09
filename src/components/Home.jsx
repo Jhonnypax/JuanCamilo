@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 
 const Home = () => {
-
   const phrases = [
     "Hi! my name is Juan Camilo.",
     'Go see my "PROJECTS"!',
@@ -44,14 +43,13 @@ const Home = () => {
   }, [loopNum, subIndex, phrases]);
 
   return (
-      <div className="contenidoHome">
-        <h1 className="typing-animation">{text}</h1>
-        <p>
-          <i> - Front end Developer, UX designer, based in Bogotá, Colombia -</i>
-        </p>
-        <a href="https://docs.google.com/document/d/1EQD9UueIV1AGTS-hVciIH5u6eiYtO8h11WJcWVuPpYQ/edit?usp=sharing" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
-      </div>
+    <div className="contenidoHome">
+      <h1 className="typing-animation">{text}</h1>
+      <p>- Software Designer / Engineer based in Bogotá, Colombia -</p>
+      <a href="https://docs.google.com/document/d/1EQD9UueIV1AGTS-hVciIH5u6eiYtO8h11WJcWVuPpYQ/edit?usp=sharing" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
+    </div>
   );
-};
+}
 
 export default Home;
+
