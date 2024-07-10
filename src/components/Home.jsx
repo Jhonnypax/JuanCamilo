@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
+import perfil from "../components/img/file.png";
 
 const Home = () => {
   const phrases = [
@@ -44,8 +45,11 @@ const Home = () => {
 
   return (
     <div className="contenidoHome">
+      <div className="profile-container">
+        <img src={perfil} alt="Profile" className="profile-image" />
+      </div>
       <h1 className="typing-animation">{text}</h1>
-      <p>- Software Designer / Engineer based in Bogotá, Colombia -</p>
+      <p>- Software Designer / Engineer, UX/UI designer, based in Bogotá, Colombia -</p>
       <a href="https://docs.google.com/document/d/1EQD9UueIV1AGTS-hVciIH5u6eiYtO8h11WJcWVuPpYQ/edit?usp=sharing" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
     </div>
   );

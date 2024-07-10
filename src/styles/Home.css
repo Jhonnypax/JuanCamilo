@@ -25,9 +25,19 @@
   }
 }
 
+.profile-image {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid black; 
+  background-color: white;
+}
+
 .contenidoHome p {
   font-family: "Afacad", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   padding-top: 40px;
   text-align: center;
 }
@@ -71,7 +81,7 @@
   } 
 
   .contenidoHome {
-    font-size: 16px;
+    font-size: 20px;
   }
   .contenidoHome p {
     font-size: 20px;

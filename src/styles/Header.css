@@ -19,6 +19,15 @@
   width: 100%;
   background-color: transparent;
   z-index: 1000;
+  transition: top 0.3s;
+}
+
+.header.hidden {
+  top: -100px; 
+}
+
+.header.visible {
+  top: 0;
 }
 
 .nombre {
@@ -115,12 +124,10 @@
     right: 0;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(30px);
-    width: 33.33%;
+    width: 100%; /* Full screen width for mobile */
     height: 100%;
     justify-content: center;
     padding: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     align-items: center;
     z-index: 1001;

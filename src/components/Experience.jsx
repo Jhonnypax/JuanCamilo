@@ -7,7 +7,7 @@ const Experience = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowError(false);
-    }, 3000); 
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, []);

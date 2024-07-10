@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap");
 
 .about {
-  margin-top: 100px;
+  margin-top: 83px;
   font-family: "Afacad", sans-serif;
-  padding: 40px;
-  max-width: 1200px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -23,6 +21,10 @@
   }
 }
 
+.about-content {
+  flex: 1;
+}
+
 .about h1 {
   text-align: left;
   padding: 10px 0;
@@ -34,20 +36,8 @@
   color: white;
   line-height: 1.8;
   margin: 10px 0;
-  font-style: italic;
   font-size: 1.5em;
   text-align: left;
-  width: 90%;
-}
-
-.coding-image {
-  max-width: 400px;
-  max-height: 400px;
-  transition: transform 0.3s ease;
-}
-
-.coding-image:hover {
-  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
