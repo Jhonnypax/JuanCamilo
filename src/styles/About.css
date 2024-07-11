@@ -21,14 +21,10 @@
   }
 }
 
-.about-content {
-  flex: 1;
-}
-
 .about h1 {
   text-align: left;
   padding: 10px 0;
-  font-size: 3.0em;
+  font-size: 4.0em;
   color: white;
 }
 
@@ -38,6 +34,10 @@
   margin: 10px 0;
   font-size: 1.5em;
   text-align: left;
+}
+
+.UX{
+  color: blanchedalmond;
 }
 
 @media (max-width: 768px) {

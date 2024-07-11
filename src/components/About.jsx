@@ -18,7 +18,7 @@ const About = () => {
           for my studies. That's why as soon as I finished school I knew what I
           wanted to study. "Programming" was the term I used without knowing how
           expanded and diverse that world is. So I decided to take a year and a half
-          to study full-stack development. There I encountered <strong>UX DESING AND FRONT-END 
+          to study full-stack development. There I encountered <strong className='UX'>UX DESING AND FRONT-END 
           DEVELOPMENT WHICH I DECIDED WILL BE MY MAIN INTERESTS.</strong>
           <br />
           <br />
