@@ -49,11 +49,20 @@ const Home = () => {
         <img src={perfil} alt="Profile" className="profile-image" />
       </div>
       <h1 className="typing-animation">{text}</h1>
-      <p>- Software Designer / Engineer, UX/UI designer, based in Bogotá, Colombia -</p>
-      <a href="https://docs.google.com/document/d/1EQD9UueIV1AGTS-hVciIH5u6eiYtO8h11WJcWVuPpYQ/edit?usp=sharing" className="cv" target="_blank" rel="noopener noreferrer">MY CV</a>
+      <p>
+        - Software Designer / Engineer, UX/UI designer, based in Bogotá,
+        Colombia -
+      </p>
+      <a
+        href="https://drive.google.com/file/d/10ubECFYJxyK0ogrXs-3bVPECWH5s4Jh6/view?usp=sharing"
+        className="cv"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MY CV
+      </a>
     </div>
   );
-}
+};
 
 export default Home;
-
